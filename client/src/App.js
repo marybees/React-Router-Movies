@@ -30,16 +30,9 @@ const App = () => {
   return (
     <div className='App'>
       <SavedList list={[ /* This is stretch */]} />
-      <nav>
-      <div className='nav-links'>
-        <Link to='/'>Home </Link>
-        <Link to='/Movies'>Movies</Link>
+      <div>
       </div>
-      </nav>
-      {/* <Switch>
-        {/* <Route path='/movie/:id'>
-        <movie={movieList} />
-        </Route> */}
+      <Switch>
 
         <Route path='/movie-list'>
           <MovieList movies={movieList} />
@@ -49,7 +42,7 @@ const App = () => {
           <Movie/>
         </Route>
         
-      </Switch> */}
+      </Switch>
     </div>
   );
 };
